@@ -36,10 +36,10 @@ export default {
             axios.get('/init').then(res => {
 
                 // save filter items to vue local data
-                this.filterItems = res.data.filter_items; // maybe res.data..data.filter_items
+                this.filterItems = res.data.filter_items; // maybe res.data.data.filter_items
 
                 // save filter items to vue local data
-                this.selectedFilterItems = res.data.filter_selected; // maybe res.data..data.filter_selected
+                this.selectedFilterItems = res.data.filter_selected; // maybe res.data.data.filter_selected
 
                 // then fetch chart data with full filters
                 this.fetchChartData();
