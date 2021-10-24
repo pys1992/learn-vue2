@@ -1,7 +1,6 @@
 <template>
     <div id="app">
         <select v-model="selectedFilterItems.partner_user_id" @change="handleFilterChangeMock">
-            <!-- 内联对象字面量 -->
             <option v-for="(partner_user,index) in filterItems.partner_users"
                     :key="index"
                     :value="partner_user.partner_user_id">
