@@ -55,7 +55,7 @@ export default {
             })
         },
 
-        handleFilterChangeMockhandleFilterChange() {
+        handleFilterChange() {
             this.fetchChartData()
         },
 
