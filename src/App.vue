@@ -1,29 +1,32 @@
 <template>
     <div id="app">
-<!--        <select v-model="selectedFilterItems.partner_user_id" @change="handleFilterChangeMock">-->
-<!--            <option v-for="(partner_user,index) in filterItems.partner_users"-->
-<!--                    :key="index"-->
-<!--                    :value="partner_user.partner_user_id">-->
-<!--                {{ partner_user.name }}-->
-<!--            </option>-->
-<!--        </select>-->
+        <!--        <select v-model="selectedFilterItems.partner_user_id" @change="handleFilterChangeMock">-->
+        <!--            <option v-for="(partner_user,index) in filterItems.partner_users"-->
+        <!--                    :key="index"-->
+        <!--                    :value="partner_user.partner_user_id">-->
+        <!--                {{ partner_user.name }}-->
+        <!--            </option>-->
+        <!--        </select>-->
 
-<!--        <div>-->
-<!--            <h2>chart</h2>-->
-<!--            <div>{{ chartData.single_figures.loan_book }}</div>-->
-<!--        </div>-->
+        <!--        <div>-->
+        <!--            <h2>chart</h2>-->
+        <!--            <div>{{ chartData.single_figures.loan_book }}</div>-->
+        <!--        </div>-->
 
-        <h1>NumberToObject</h1>
-        <NumberToObject></NumberToObject>
+<!--        <h1>NumberToObject</h1>-->
+        <!--        <NumberToObject></NumberToObject>-->
+        <SubmitAndRefetchData></SubmitAndRefetchData>
     </div>
 </template>
 
 <script>
 import NumberToObject from './components/NumberToObject'
+import SubmitAndRefetchData from './components/SubmitAndRefetchData'
 
 export default {
     components: {
-        NumberToObject
+        NumberToObject,
+        SubmitAndRefetchData
     },
     data() {
         return {
@@ -1624,6 +1627,16 @@ export default {
                     923,
                     925,
                     961
+                ],
+                "partner_users":[
+                    {
+                        "partner_user_id": "418",
+                        "name": "Robert Trevarrow "
+                    },
+                    {
+                        "partner_user_id": "801",
+                        "name": "Gary"
+                    },
                 ],
                 "start_date": "2021-01-01 00:00:00",
                 "end_date": "2021-10-18 23:59:59",
