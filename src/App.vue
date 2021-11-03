@@ -15,18 +15,22 @@
 
 <!--        <h1>NumberToObject</h1>-->
         <!--        <NumberToObject></NumberToObject>-->
-        <SubmitAndRefetchData></SubmitAndRefetchData>
+<!--        <SubmitAndRefetchData></SubmitAndRefetchData>-->
+        <LearnProp :filter-items="filterItems"></LearnProp>
+
     </div>
 </template>
 
 <script>
 import NumberToObject from './components/NumberToObject'
 import SubmitAndRefetchData from './components/SubmitAndRefetchData'
+import LearnProp from './components/LearnProp'
 
 export default {
     components: {
         NumberToObject,
-        SubmitAndRefetchData
+        SubmitAndRefetchData,
+        LearnProp
     },
     data() {
         return {
